@@ -1,0 +1,4 @@
+echo "openai
+python-dotenv
+pandas
+matplotlib" > requirements.txt
