@@ -2,7 +2,7 @@
 SUMMARY_PROMPT_V1 = "Summarize this:"
 
 
-Desciption of its evolution:
+### Desciption of its evolution:
 V1 had no role, no constraints and no format guidance. The output was inconsistent, sometimes too long and also added some details that we not in the letter at times.
 
 
@@ -15,7 +15,7 @@ Summarize loan applications in 3-4 sentences. Be factual and neutral.
 Do not invent any details not stated in the letter."""
 
 
-Description of its evolution:
+### Description of its evolution:
 V2 improved on V1 when it gave the model a clear role, limiting its responses to 3 to 4 sentences and forbidding it from inventing its own details. The output became consistent and useful for the loan officer.
 
 
@@ -43,7 +43,7 @@ Output: {
 Return ONLY the JSON object, nothing else."""
 
 
-Description of its evolution:
+### Description of its evolution:
 This version started with basic instructions to extract fields, improving readability. It also added an explicit schema with field name and data types so the model knew what to return. It also included a worked example to show how the JSON format to return and a null rule to prevent the model from guessing missing information.
 
 
@@ -61,5 +61,5 @@ Given a loan application and extracted data, produce a structured brief with the
     3. Missing information that the officer should request
     4. Suggested next step (e.g. "invite for interview", "request documents", "flag for senior review") - do not say approve or reject."""
 
-Description of the evolution:
+### Description of the evolution:
 It gave the model a clear role as a loan officer assistant. Structures the output into four defined sections and adds an expicit instruction that final decisions are made by humans only, forbidden the words 'approve' and 'reject' from being used.
